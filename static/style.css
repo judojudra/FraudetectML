@@ -1,0 +1,103 @@
+body {
+    background-color: #0a4894;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+}
+
+/* Card Styling */
+.card {
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(235, 228, 228, 0.1);
+    border: none;
+}
+
+/* Report Header */
+.report-header {
+    background: linear-gradient(135deg, #042647, #064a77);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Alerts */
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #bcdff7;
+    color: #31708f;
+}
+
+/* Tables */
+.table-hover tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+/* Action Phase */
+.action-phase {
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    background: rgb(236, 206, 206);
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.action-phase:hover {
+    box-shadow: 0 6px 12px rgba(243, 4, 4, 0.1);
+    transform: translateY(-3px);
+}
+
+/* List Group Items */
+.list-group-item {
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.list-group-item:hover {
+    background-color: #f1f3f5;
+    transform: translateX(5px);
+    box-shadow: inset 2px 0px 0px #3498db;
+}
+
+/* Badges */
+.badge {
+    font-weight: 600;
+    padding: 0.4em 0.8em;
+    border-radius: 8px;
+}
+
+/* Chart Containers */
+#riskDistributionChart, #transactionPatterns {
+    height: 300px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn {
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .report-header {
+        padding: 1.5rem;
+        font-size: 1.2rem;
+    }
+    
+    #riskDistributionChart, #transactionPatterns {
+        height: 250px;
+        padding: 10px;
+    }
+    
+    .list-group-item:hover {
+        transform: translateX(3px);
+    }
+}
